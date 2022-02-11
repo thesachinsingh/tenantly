@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenantly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}"> -->
+    <style>
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-left: 1%;
+            padding-right: 1%;
+            overflow: auto;
+
+        }
+
+        .navbar:hover:not(.active) {
+            background-color: black;
+        }
+
+
+        .navbar-item {
+            float: right;
+            padding: 14px 12px;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            color: darkblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="navbar" style="margin-top: 0;">
+                <li class="navbar-item" style="float: left;">
+                    <a style="font-size: 1.5em;" href="#" class="active">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a style="font-size: 1.5em;" href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div style="text-align: center; font-family: 'Quicksand', sans-serif;" class="container">
+        <h1 style="color: darkviolet; font-size: 3em; margin-bottom: 0;">Tenantly</h1>
+        <h3 style="color: darkblue; font-size: 1.3em; margin-top: 0;">Now manage your tenants at your fingertips</h3>
+    </div>
+    <br>
+    <div id="login-div" , style="text-align: center; font-family: 'Quicksand', sans-serif;">
+        <form action="/" method="POST" id="login-form">
+            <p style="font-size: 1.3em; font-family: 'Quicksand', sans-serif; font-weight: bold;">Sign in</p>
+            <input type="email" placeholder="Email" style="width: 15%; font-size: medium;" required><br><br>
+            <input type="password" placeholder="Enter Password" style="width: 15%; font-size: medium;" required><br><br>
+            <button type="submit" style="font-size: medium; padding: 5px 4px">Log in</button>
+        </form>
+    </div>
+</body>
+
+</html>
